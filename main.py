@@ -1,40 +1,27 @@
 
-class Student:
+class Rectangle:
     #########################################
     # Code your program here
     #########################################
 
-
-def makeStudent(student_dict_list):
-    #########################################
-    # Code your program here
-    #########################################
-
-
-def deleteOneStudent(slist, did):
-    #########################################
-    # Code your program here
-    #########################################
 
 def main():
-    student_dict_list = [{'id': 1001, 'name': 'John'},
-                         {'id': 1002, 'name': 'James'},
-                         {'id': 1003, 'name': 'Mark'},
-                         {'id': 1004, 'name': 'Matthew'},
-                         {'id': 1005, 'name': 'Arnold'}]
+    r1 = Rectangle(10, 20)
+    r2 = Rectangle(100, 200)
+    print(r1)
+    print(r2)
+    r1._width = 99
+    r1._height = 99
+    print(r1)
 
-    # makeStudent
-    slist = makeStudent(student_dict_list)
-    print(f'\n**** Total number of students: {Student.numofStudent}')
-    for s in slist:
-        print(s)
-
-    # Delete one object
-    did = 1003
-    deleteOneStudent(slist, did)
-    print(f'\n**** Total number of students: {Student.numofStudent}')
-    for s in slist:
-        print(s)
+    if r1 > r2:
+        print('Rectangle r1 is greater than r2')
+    else:
+        print('Rectangle r1 is not greater than r2')
+    if r1 < r2:
+        print('Rectangle r1 is less than r2')
+    else:
+        print('Rectangle r1 is not less than r2')
 
 
 if __name__ == '__main__':
