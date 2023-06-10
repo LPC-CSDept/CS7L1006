@@ -1,8 +1,9 @@
-
 class Rectangle:
-    #########################################
-    # Code your program here
-    #########################################
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
 
 
 def main():
@@ -12,7 +13,8 @@ def main():
     print(r2)
     r1._width = 99
     r1._height = 99
-    print(r1)
+
+    print(r1.__str__())
 
     if r1 > r2:
         print('Rectangle r1 is greater than r2')
